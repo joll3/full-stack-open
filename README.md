@@ -30,3 +30,20 @@ upon upgrade/reinstall.
 ```
 git config --global --edit
 ```
+
+### 0 Fundamentals
+- [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)
+- recommended file structure
+```
+part0
+part1
+  courseinfo
+  unicafe
+  anecdotes
+part2
+  courseinfo
+  phonebook
+  countries
+```
+- a service for creating [websequencediagrams](https://www.websequencediagrams.com)
+- article about [Unified Modeling Language (UML) | Sequence Diagrams](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)
