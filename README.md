@@ -13,6 +13,8 @@ problems against the standard nvm install method prior to reporting.
 You should create NVM's working directory if it doesn't exist:
 ```
   mkdir ~/.nvm #done
+  nvm install 16.13.2 #install node version required for course
+  #grep 16.13.2 ~/.zsh_history
 ```
 Add the following to ~/.zshrc or your desired shell
 configuration file:
@@ -24,3 +26,7 @@ configuration file:
 You can set $NVM_DIR to any location, but leaving it unchanged from
 /opt/homebrew/opt/nvm will destroy any nvm-installed Node installations
 upon upgrade/reinstall.
+
+```
+git config --global --edit
+```
