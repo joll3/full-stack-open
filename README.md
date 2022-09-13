@@ -30,6 +30,18 @@ upon upgrade/reinstall.
 ```
 git config --global --edit
 ```
+Node.js version >17 doesn't support older openssl setup
+https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
+
+https://github.com/webpack/webpack/issues/14532#issuecomment-947012063
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
+```zsh
+part1(main*)$ env 
+```
+shows nvm enviroment paths and information about installation
 
 ### 0 Fundamentals
 - [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)
