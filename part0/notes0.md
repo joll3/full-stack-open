@@ -59,4 +59,17 @@ browser-->server: [{content: "test", date: "2022-09-05T18:22:38.307Z"}]
 ## 1b Javascript
 - During this course the use of var is ill-advised and you should stick with using const and let! 
 - use console.log() to test functionality
+### JavaScript materials
+There exist both good and poor guides for JavaScript on the Internet. Most of the links on this page relating to JavaScript features reference Mozilla's JavaScript Guide.
 
+It is highly recommended to immediately read A re-introduction to JavaScript (JS tutorial) on Mozilla's website.
+
+If you wish to get to know JavaScript deeply there is a great free book series on the Internet called You-Dont-Know-JS.
+
+Another great resource for learning JavaScript is javascript.info.
+
+The free and highly engaging book Eloquent JavaScript https://eloquentjavascript.net. Takes you from the basics to interesting stuff quickly, a mixture of theory projects and exercises, covers general programming theory as well as the JavaScript language.
+
+egghead.io has plenty of quality screencasts on JavaScript, React, and other interesting topics. Unfortunately, some of the material is behind a paywall.
+
+## 1c Component state, event handlers
