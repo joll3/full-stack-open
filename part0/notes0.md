@@ -55,3 +55,8 @@ end note
 browser->server: HTTP POST 201 https://studies.cs.helsinki.fi/exampleapp/new_note_spa
 browser-->server: [{content: "test", date: "2022-09-05T18:22:38.307Z"}]
 ```
+
+## 1b Javascript
+- During this course the use of var is ill-advised and you should stick with using const and let! 
+- use console.log() to test functionality
+
