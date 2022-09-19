@@ -1,10 +1,13 @@
 [websequencesdiagrams](https://www.websequencediagrams.com)
 
+- cmd k + cmd o | cmd j
+
 ## 0.4: New note
+
 ```
 title user creates a new note on https://studies.cs.helsinki.fi/exampleapp/notes by inserting data and pressing "save" button.
 
-note over browser 
+note over browser
 Disabled caching to force browser
 to create new HTTP GET requests
 end note
@@ -25,13 +28,15 @@ server-->browser: [{"content":"6666666","date":"2022-09-05T18:02:51.542Z"}, ...]
 note over browser
 browser executes the event handler
 that render notes to display
-end note 
+end note
 ```
-## 0.5: Single page app
-```uml
-title user goes to singe page app https://studies.cs.helsinki.fi/exampleapp/spa 
 
-note over browser 
+## 0.5: Single page app
+
+```uml
+title user goes to singe page app https://studies.cs.helsinki.fi/exampleapp/spa
+
+note over browser
 Disabled caching to force browser
 to create new HTTP GET requests
 end note
@@ -44,11 +49,13 @@ server-->browser: spa.js
 browser->server: HTTP GET 200  https://studies.cs.helsinki.fi/exampleapp/data.json
 server-->browser: [{"content":"joo","date":"2022-09-05T13:04:49.591Z"}, ...]
 ```
+
 ## 0.6: New note
+
 ```uml
 title user creates a new note on https://studies.cs.helsinki.fi/exampleapp/spa by inserting data and pressing "save" button.
 
-note over browser 
+note over browser
 Disabled caching to force browser
 to create new HTTP GET requests
 end note
@@ -57,9 +64,12 @@ browser-->server: [{content: "test", date: "2022-09-05T18:22:38.307Z"}]
 ```
 
 ## 1b Javascript
-- During this course the use of var is ill-advised and you should stick with using const and let! 
+
+- During this course the use of var is ill-advised and you should stick with using const and let!
 - use console.log() to test functionality
+
 ### JavaScript materials
+
 There exist both good and poor guides for JavaScript on the Internet. Most of the links on this page relating to JavaScript features reference Mozilla's JavaScript Guide.
 
 It is highly recommended to immediately read A re-introduction to JavaScript (JS tutorial) on Mozilla's website.
