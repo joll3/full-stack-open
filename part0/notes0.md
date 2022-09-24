@@ -1,6 +1,6 @@
 [websequencesdiagrams](https://www.websequencediagrams.com)
 
-- cmd k + cmd o | cmd j
+- cmd K + cmd 0 | cmd k + cmd J
 
 ## 0.4: New note
 
