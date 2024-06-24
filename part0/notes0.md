@@ -2,6 +2,18 @@
 
 - cmd K + cmd 0 | cmd k + cmd J
 
+## Part 0
+
+exercises|credits|grade
+---|---|---
+138|7|5
+127|6|5
+116|5|5
+105|5|4
+94<<|5|3
+83|5|2
+72|5|1
+
 ## 0.4: New note
 
 ```
