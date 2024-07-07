@@ -4,19 +4,13 @@ Chromium browser w dev tools open
 
 [JSON viewer extension](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)
 
-## 0b [Fundamentals of Web apps](https://studies.cs.helsinki.fi/exampleapp/)
-
-### Traditional web applications
-
->In traditional web applications, the browser is "dumb". It only fetches HTML data from the server, and all application logic is on the server. A server can be created using Java Spring , Python Flask or Ruby on Rails to name just a few examples.
-
-### AJAX (asynchronous javascript and XML)
-
-revolutionary approach to fetching content using JavaScript included in HTML without rerendering the page
-
 ## SETUP
 
-```bash
+[Personal Visual Studio Code setup](../../Sync/markdown/notes/programming.md#visual-studio-code-vscode), with `mermaid` [websequencediagrams](https://www.websequencediagrams.com)
+
+### [Node.js installation instructions](https://nodejs.org/en/download/package-manager/)
+
+```zsh
 brew install nvm
 ```
 
@@ -26,7 +20,7 @@ problems against the standard nvm install method prior to reporting.
 
 You should create NVM's working directory if it doesn't exist:
 
-```
+```zsh
   mkdir ~/.nvm #done
   nvm install 16.13.2 #install node version required for course
   #grep 16.13.2 ~/.zsh_history
@@ -35,15 +29,15 @@ You should create NVM's working directory if it doesn't exist:
 Add the following to ~/.zshrc or your desired shell
 configuration file:
 
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 You can set $NVM_DIR to any location, but leaving it unchanged from
 /opt/homebrew/opt/nvm will destroy any nvm-installed Node installations
 upon upgrade/reinstall.
 
-```
+```zsh
 git config --global --edit
 ```
 
@@ -52,22 +46,44 @@ https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-
 
 https://github.com/webpack/webpack/issues/14532#issuecomment-947012063
 
-```
+```zsh
 export NODE_OPTIONS=--openssl-legacy-provider
 ```
 
 ```zsh
-part1(main*)$ env 
+part1(main*)$ env
 ```
 
 shows nvm enviroment paths and information about installation
 
-### 0 Fundamentals
+## [0a General info](https://fullstackopen.com/en/part0/general_info)
 
-- [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)
-- recommended file structure
+### Parts and completion
 
-```
+Full Stack studies consist of the core course and multiple extensions. You can complete the studies in the extent of 5 to 14 credits.
+
+Parts 0-5 (core course) - Full Stack Web Development (5 cr, CSM141081)
+The number of credits and the grade for the course are based on the total number of submitted exercises for parts 0-7 (including exercises marked with an asterisk).
+
+Credits and grades are calculated as follows:
+
+| exercises | credits | grade |
+| --------- | ------- | ----- |
+| 138       | 7       | 5     |
+| 127       | 6       | 5     |
+| 116       | 5       | 5     |
+| 105       | 5       | 4     |
+| \>\>94    | 5       | 3<<   |
+| 83        | 5       | 2     |
+| 72        | 5       | 1     |
+
+### Submitting exercises
+
+[Submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen/submissions)
+
+recommended file structure
+
+```file
 part0
 part1
   courseinfo
@@ -79,5 +95,6 @@ part2
   countries
 ```
 
-- a service for creating [websequencediagrams](https://www.websequencediagrams.com)
-- article about [Unified Modeling Language (UML) | Sequence Diagrams](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)
+### Exam
+
+**!!MUST PASS!!** has no effect on grade

@@ -1,18 +1,47 @@
-[websequencesdiagrams](https://www.websequencediagrams.com)
+#
 
-- cmd K + cmd 0 | cmd k + cmd J
+## 0b [Fundamentals of Web apps](https://studies.cs.helsinki.fi/exampleapp/)
 
-## Part 0
+### HTTP GET
 
-exercises|credits|grade
----|---|---
-138|7|5
-127|6|5
-116|5|5
-105|5|4
-94<<|5|3
-83|5|2
-72|5|1
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Server
+
+    Client->>Server: HTTP GET /path/to/resource
+    activate Server
+    Server-->>Client: 200 OK (with Resource)
+    deactivate Server
+```
+
+### Traditional web applications
+
+> In traditional web applications, the browser is "dumb". It only fetches HTML data from the server, and all application logic is on the server. A server can be created using Java Spring, Python Flask or Ruby on Rails to name just a few examples.
+
+Server: static text file || HTML code formed dynamically on the server
+
+(this course will be using Express library with Node.js to create servers)
+
+### Running application logic in the browser
+
+```mermaid
+sequenceDiagram
+    participant Browser
+    participant Server
+
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/
+    Server-->>Browser: HTML document
+    Browser->>Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/kuva.png
+    Server-->>Browser: the .png pic
+```
+
+### AJAX (asynchronous javascript and XML)
+
+revolutionary approach to fetching content using JavaScript included in HTML without rerendering the page
+
+- a service for creating [websequencediagrams](https://www.websequencediagrams.com)
+- article about [Unified Modeling Language (UML) | Sequence Diagrams](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)
 
 ## 0.4: New note
 
