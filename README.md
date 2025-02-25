@@ -1,14 +1,14 @@
 # [Fullstack Open](https://fullstackopen.com/en/)
 
-Chromium browser w dev tools open
-
-[JSON viewer extension](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)
-
 ## SETUP
 
-[Personal Visual Studio Code setup](../../Sync/markdown/notes/programming.md#visual-studio-code-vscode), with `mermaid` [websequencediagrams](https://www.websequencediagrams.com)
+[Chromium](https://formulae.brew.sh/cask/chromium) browser w dev tools open  
+[JSON viewer extension](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)  
+`mermaid` [websequencediagrams](https://www.websequencediagrams.com)
 
 ### [Node.js installation instructions](https://nodejs.org/en/download/package-manager/)
+
+> Part updated on 17th January 2025. Node updated to version v22.3.0. Eslint configuration moved to eslint.config.js file
 
 ```zsh
 brew install nvm
