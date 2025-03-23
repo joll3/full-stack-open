@@ -8,53 +8,32 @@
 
 ### [Node.js installation instructions](https://nodejs.org/en/download/package-manager/)
 
-> Part updated on 17th January 2025. Node updated to version v22.3.0. Eslint configuration moved to eslint.config.js file
+> Part updated on 17th January 2025. Node updated to version version `22.3.0`. Eslint configuration moved to eslint.config.js file
 
 ```zsh
 brew install nvm
 ```
 
-Please note that upstream has asked us to make explicit managing
-nvm via Homebrew is unsupported by them and you should check any
-problems against the standard nvm install method prior to reporting.
+> Please note that upstream has asked us to make explicit managing nvm via Homebrew is unsupported by them and you should check any problems against the standard nvm install method prior to reporting.
 
 You should create NVM's working directory if it doesn't exist:
 
-```zsh
-  mkdir ~/.nvm #done
-  nvm install 16.13.2 #install node version required for course
-  #grep 16.13.2 ~/.zsh_history
-```
+`mkdir ~/.nvm`
 
-Add the following to ~/.zshrc or your desired shell
-configuration file:
+Add the following to your shell profile e.g. ~/.profile or ~/.zshrc:
 
+```bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-
-You can set $NVM_DIR to any location, but leaving it unchanged from
-/opt/homebrew/opt/nvm will destroy any nvm-installed Node installations
-upon upgrade/reinstall.
-
-```zsh
-git config --global --edit
 ```
 
-Node.js version >17 doesn't support older openssl setup
-https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
+> This setup will keep all Node versions safe from Homebrew changes, but load `nvm` from Homebrew location
+>
+> > You can set $NVM_DIR to any location, but leaving it unchanged from /opt/homebrew/opt/nvm will destroy any nvm-installed Node installations upon upgrade/reinstall.
 
-https://github.com/webpack/webpack/issues/14532#issuecomment-947012063
-
-```zsh
-export NODE_OPTIONS=--openssl-legacy-provider
-```
-
-```zsh
-part1(main*)$ env
-```
-
-shows nvm enviroment paths and information about installation
+`source ~/.zshrc` to apply changes to shell profile  
+`nvm install 22.3.0`
 
 ## [0a General info](https://fullstackopen.com/en/part0/general_info)
 
