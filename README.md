@@ -2,7 +2,7 @@
 
 ## SETUP
 
-[Chromium](https://formulae.brew.sh/cask/chromium) browser w dev tools open  
+[`brew install chromium`](https://formulae.brew.sh/cask/chromium) browser w dev tools open  
 [JSON viewer extension](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)  
 `mermaid` [websequencediagrams](https://www.websequencediagrams.com)
 
