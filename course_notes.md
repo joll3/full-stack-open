@@ -90,6 +90,24 @@ revolutionary approach introduced in 2005 to fetch content using JavaScript incl
 
 > The world of JavaScript develops fast, which brings its own set of challenges. Tools, libraries and the language itself are under constant development. Some are starting to get tired of the constant change, and have coined a term for it: JavaScript fatigue. See How to Manage JavaScript Fatigue on auth0 or JavaScript fatigue on Medium.
 
+## 1a Introduction to React
+
+### Component
+
+### JSX
+
+It seems like React components are returning HTML markup. However, this is not the case. Under the hood, JSX returned by React components is compiled into JavaScript. JSX is "XML-like", which means that every tag needs to be closed.
+
+### Multiple components
+
+Indeed, a core philosophy of React is composing applications from many specialized reusable components.
+
+Another strong convention is the idea of a root component called App at the top of the component tree of the application.
+
+### props: passing data to components
+
+
+
 ## 1b Javascript
 
 - During this course the use of var is ill-advised and you should stick with using const and let!
