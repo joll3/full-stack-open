@@ -106,12 +106,24 @@ Another strong convention is the idea of a root component called App at the top 
 
 ### props: passing data to components
 
-
-
 ## 1b Javascript
 
 - During this course the use of var is ill-advised and you should stick with using const and let!
 - use console.log() to test functionality
+
+The official name of the JavaScript standard is ECMAScript. At this moment, the latest version is the one released in June of 2024 with the name ECMAScript®2024, otherwise known as ES15.
+
+The latest versions of Node already understand the latest versions of JavaScript, so the code does not need to be transpiled.
+
+`node name_of_file.js`
+
+VARIABLES choosing [let, var or const in javascript](https://medium.com/craft-academy/javascript-variables-should-you-use-let-var-or-const-394f7645c88f)
+
+ARRAYS forEach calls the function for each of the items in the array, always passing the individual item as an argument. Other argurments are possible.
+
+OBJECTS listing its properties within braces.
+
+FUNCTIONS defined mostly by the arrow syntax, which can be shorthanded
 
 ### JavaScript materials
 
